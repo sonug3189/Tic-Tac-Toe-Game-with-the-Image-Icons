@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFB300</color>
+    <color name="colorPrimaryDark">#ff8f00</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorBoard">#FF6F00</color>
+
+    <color name="foreground_material_light">#ffffff</color>
+
+    <color name="restart_button_color">#ff9100</color>
+    <color name="press_button_color">#c8c8c8</color>
+
+    <color name="player_x_color">#1565c0</color>
+    <color name="player_o_color">#43A047</color>
+
+    <color name="active_player">#00B0FF</color>
+    <color name="buttoncolor">#FFB300</color>
+</resources>

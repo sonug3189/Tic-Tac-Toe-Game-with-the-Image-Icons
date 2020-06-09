@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8f00"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".RulesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RULES FOR TIC-TAC-TOE"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black">
+
+    </TextView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffb302"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

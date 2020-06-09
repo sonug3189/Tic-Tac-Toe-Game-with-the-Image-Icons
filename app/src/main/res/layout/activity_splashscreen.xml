@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8f00"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".splashscreen">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id1">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:background="#ffb302"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/circle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:background="@drawable/but"
+                android:layout_marginTop="50dp"
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text="tic tac toc for kids"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:background="@drawable/but"
+                android:id="@+id/button1"
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text="Rules"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/but"
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:padding="20sp"
+                android:text="Exit"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+
+
+<!--            <Button-->
+<!--                android:id="@+id/button2"-->
+<!--                android:layout_width="320dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@drawable/but"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:padding="20sp"-->
+<!--                android:text="Privacy Policy"-->
+<!--                android:textStyle="italic"-->
+<!--                android:textSize="20dp"/>-->
+
+            <!--<com.appnext.banners.BannerView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/banner"-->
+                <!--android:layout_width="407dp"-->
+                <!--android:layout_height="51dp"-->
+                <!--ads:bannerSize="BANNER"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--ads:placementId="a48ac80e-7c52-402d-b061-b7d6ca400823" />-->
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

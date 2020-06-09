@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.Tic_tac_toe_for_kids.pro.Tictac"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--<com.appnext.banners.BannerView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/banner"-->
+        <!--android:layout_width="407dp"-->
+        <!--android:layout_height="51dp"-->
+        <!--ads:bannerSize="BANNER"-->
+        <!--ads:placementId="a48ac80e-7c52-402d-b061-b7d6ca400823" />-->
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/oPlayerLogo"
+            style="@style/PlayerLogoStyle"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/circle" />
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape"
+            android:onClick="restartGame"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/restart"
+            android:textColor="@color/restart_button_color"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <ImageView
+            android:id="@+id/xPlayerLogo"
+            style="@style/PlayerLogoStyle"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/cross" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/win_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            style="@style/RowsStyle">
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="0" />
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="1" />
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            style="@style/RowsStyle">
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="3" />
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="4" />
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            style="@style/RowsStyle">
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="6" />
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="7" />
+
+            <ImageView
+                style="@style/GridStyle"
+                android:tag="8" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/win_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Player X win"
+
+        android:textAlignment="center"
+        android:textColor="@color/player_o_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
